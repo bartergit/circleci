@@ -14,7 +14,7 @@ jobs:
       - run:
           command: |
             sudo chmod +x ./manage.py
-            ./manage.py
+            pipenv run python ./manage.py
           name: Test
 
 workflows:
